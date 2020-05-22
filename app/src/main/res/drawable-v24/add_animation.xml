@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item android:drawable="@drawable/raf"-->
+<!--        android:duration="100"/>-->
+
+    <item android:drawable="@drawable/ref1"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/israel"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/ll"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/ref2"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/ref4"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/ref5"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/line"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/avgna"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/drwer"
+        android:duration="2000"/>
+    <item android:drawable="@drawable/kholot"
+        android:duration="2000"/>
+
+</animation-list>

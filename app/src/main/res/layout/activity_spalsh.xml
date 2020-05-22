@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/gradient_backgruond"
+
+    tools:context=".SpalshActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refugees  and asylum seekers  In Israel"
+        android:textSize="32sp"
+        android:gravity="center"
+
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:id="@+id/appName"
+android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+        android:layerType="hardware"
+
+
+        android:layout_marginTop="1dp"
+        android:scaleType="fitXY"
+
+        android:background="@drawable/add_animation" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:id="@+id/click"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Click Here To Find The Services"
+        android:textAlignment="center"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

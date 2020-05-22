@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:background="@color/colorPrimary"
+    app:cardElevation="40dp">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="2dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_height="wrap_content"
+            android:text="firstNAme"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:id="@+id/admin_firstName"
+            android:textSize="16sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:layout_margin="6dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+           android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:text="LastNAme"
+            android:id="@+id/admin_lastName"
+            android:textSize="16sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:layout_margin="6dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="wrap_content"
+            android:text="VizaNumber"
+            android:id="@+id/admin_visaNumber"
+            android:textSize="16sp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textSize="16sp"
+            android:layout_margin="7dp"
+            android:id="@+id/admin_dat"
+
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

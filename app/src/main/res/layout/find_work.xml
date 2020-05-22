@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="50dp">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+
+
+
+
+        <TextView
+            android:id="@+id/employer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="WorkType"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+
+            android:layout_marginLeft="1dp"/>
+
+
+        <TextView
+            android:id="@+id/workType"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="1dp"
+
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="WorkType"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="City:"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/employer"
+
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/workCity"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employer"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="5dp"
+
+            android:gravity="center"
+            android:text="Work Description"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/f"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text=" Tel"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/e"
+
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/worklPhone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workCity"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="5dp"
+
+
+            android:gravity="center"
+            android:text="Tel"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/workTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/worklPhone"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="5dp"
+
+
+            android:gravity="center"
+            android:text="date"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="14dp"
+    tools:context=".FindWorkActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Kids  Information"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/kids"
+        android:layerType="hardware"
+        android:scaleType="fitXY"/>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorPrimary"
+    android:id="@+id/kid_name"
+    android:hint="Kid Name"
+    android:textSize="20sp"
+    android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/kid_Family_name"
+        android:hint="Family Name"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/kid_family_phone"
+        android:hint="Phone"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/kid_info"
+        android:hint="Send"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"/>
+
+
+
+
+
+
+
+</LinearLayout>

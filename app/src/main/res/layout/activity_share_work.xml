@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ShareWorkActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/write_your_information"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:background="@drawable/input_design"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        android:padding="20sp"
+        android:id="@+id/full_name_coors"/>
+    <EditText
+        android:background="@drawable/input_design"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:id="@+id/phone_number_coors"/>
+    <EditText
+        android:background="@drawable/input_design"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+        android:padding="20sp"
+    android:layout_height="wrap_content"
+    android:hint="Coors Name"
+    android:id="@+id/coors_name"/>
+    <Button
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Send"
+        android:id="@+id/send_info"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

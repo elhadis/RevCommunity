@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FamiliesActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:padding="4dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Families Services"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="3dp"
+
+        android:src="@drawable/families"
+        android:scaleType="fitXY"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Partner Full Name"
+        android:textSize="20sp"
+        android:layout_margin="4dp"
+        android:textColorHint="@color/colorPrimary"
+        android:padding="6dp"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/meal_partner_families"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Female Partner Full Name"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+        android:layout_margin="4dp"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/female_partner_families"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kids"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:inputType="number"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/families_kids_number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/families_address"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="phone Number"
+        android:inputType="number"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/families_phone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Submit"
+        android:textSize="30sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/input_design"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/families_submit"/>
+
+
+</LinearLayout>

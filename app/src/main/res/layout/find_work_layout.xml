@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:padding="12dp"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Work "
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:layout_margin="5dp"
+                android:layout_marginStart="50dp"
+                android:id="@+id/editText_type"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Work Place"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="WorkPlace"
+                android:layout_marginStart="50dp"
+                android:id="@+id/editText_place"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:textColor="@android:color/black"
+
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Call"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_margin="6dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="phone "
+
+                android:layout_marginStart="50dp"
+                android:id="@+id/editText_number"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_dateTime"
+            android:text="Date"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
