@@ -141,6 +141,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(post);
                 break;
 
+            case R.id.work:
+                Intent postWork  =new Intent(getBaseContext(),PostProductActivity.class);
+                startActivity(postWork);
+                break;
 
 
 
