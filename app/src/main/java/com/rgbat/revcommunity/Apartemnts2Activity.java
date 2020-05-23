@@ -69,7 +69,7 @@ public class Apartemnts2Activity extends AppCompatActivity {
                     protected void onBindViewHolder(@NonNull HouseHolder holder, int position, @NonNull Houses model) {
                         holder.description.setText(model.getDescription());
                         holder.price.setText(" Rent price = "+ model.getPrice());
-                        holder.place.setText("Apartment City is " + model.getPlace());
+                        holder.place.setText("Apartment City  " + model.getPlace());
                         holder.date.setText(model.getDate()+ "  "  + model.getTime());
                         Picasso.get().load(model.getHouseimage()).into(holder.imageView);
                         loadingDialog.dismiss();

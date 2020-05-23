@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".PostWorkActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Posting Work Information"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Work Type"
+        android:padding="20sp"
+        android:id="@+id/work_type"/>
+    <EditText
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:hint="Work City"
+        android:id="@+id/work_city"/>
+    <EditText
+        android:background="@drawable/input_design"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:padding="20sp"
+
+        android:layout_height="wrap_content"
+        android:hint="Employer Number"
+        android:id="@+id/employer_num"/>
+    <Button
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:text="Posting"
+        android:id="@+id/post_work_information"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+
+</LinearLayout>

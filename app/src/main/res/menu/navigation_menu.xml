@@ -3,16 +3,16 @@
 
 
 
-<!--    <item android:id="@+id/post"-->
-<!--        android:title="Post"-->
-<!--        android:icon="@drawable/ic_share"/>-->
+    <item android:id="@+id/post"
+        android:title="Post New Work"
+        android:icon="@drawable/ic_share"/>
 
-<!--    <item android:id="@+id/work"-->
-<!--        android:title="Find Work"-->
-<!--        android:icon="@drawable/ic_find_work"/>-->
+    <item android:id="@+id/work"
+        android:title="post New Product"
+        android:icon="@drawable/ic_find_work"/>
 
     <item android:id="@+id/house"
-        android:title="Find House For Rent"
+        android:title="Find Apartment For Rent"
         android:icon="@drawable/ic_home"/>
 
     <item android:id="@+id/product"

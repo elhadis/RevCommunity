@@ -8,7 +8,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -134,6 +136,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(product);
                 break;
 
+            case R.id.post:
+                Intent post  =new Intent(getBaseContext(),PostWorkActivity.class);
+                startActivity(post);
+                break;
+
 
 
 
@@ -157,11 +164,49 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseRecyclerAdapter<PostingWork, FidWorkAdabter>(options) {
                     @Override
                     protected void onBindViewHolder(@NonNull FidWorkAdabter holder, int position, @NonNull PostingWork model) {
+
+                        final String id = getRef(position).getKey();
                         holder.workType.setText(model.getWorkType());
                         holder.worPlace.setText(model.getWorkCity());
                         holder.workNumber.setText(model.getWorkEmployerNum());
                         holder.dateTime.setText(model.getDate()+ " " + model.getTime());
                         loadingDialog.dismiss();
+
+                        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+                            @Override
+                            public boolean onLongClick(View v) {
+
+                                CharSequence option [] = new CharSequence[]{
+
+                                       "Yes",
+
+
+                                       "No"
+
+                                };
+                                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                                builder.setTitle("Are You Sure Want Delete").setItems(option, new
+                                        DialogInterface.OnClickListener() {
+                                            @Override
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                if (which == 0){
+
+
+                                                    DeletItem(id);
+                                                }
+                                                else {
+                                                    finish();
+                                                }
+
+                                            }
+                                        });
+                                builder.show();
+
+
+
+                                return true;
+                            }
+                        });
 
 
 
@@ -180,5 +225,9 @@ public class MainActivity extends AppCompatActivity {
         adapter.startListening();
 
 
+    }
+
+    private void DeletItem(String id) {
+        Ref.child(id).removeValue();
     }
 }
