@@ -3,22 +3,14 @@ package com.rgbat.revcommunity;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 
-import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Magnifier;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.Continuation;
@@ -34,16 +26,14 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-import com.rgbat.revcommunity.R;
 
-import java.net.URI;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 
 import static android.widget.Toast.LENGTH_LONG;
 
-public class PostProductActivity extends AppCompatActivity {
+public class PostProductctivity extends AppCompatActivity {
     public static final int REQUEST_CODE = 102;
     private ImageView postImage;
     private EditText postProductPrice,postProductPhone;
@@ -59,7 +49,7 @@ public class PostProductActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post_product);
+        setContentView(R.layout.activity_post_productctivity);
         postBtn = findViewById(R.id.post_new_product);
         postProductPrice= findViewById(R.id.post_product_price);
         postProductPhone = findViewById(R.id.post_product_phone);
